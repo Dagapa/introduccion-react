@@ -1,0 +1,35 @@
+.CreateButton{
+    background-color: #78B9FF;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: flex-start;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #78B9FF;
+    transform: scale(var(--ggs,1));
+    border-radius: 22px;
+}
+
+.CreateButton::after,
+.CreateButton::before {
+   content: "";
+   display: block;
+   box-sizing: border-box;
+   position: absolute;
+   width: 10px;
+   height: 2px;
+   background: white;
+   border-radius: 40px;
+   top: 8px;
+   left: 4px
+}
+
+.CreateButton::after {
+   width: 2px;
+   height: 10px;
+   top: 4px;
+   left: 8px
+}
